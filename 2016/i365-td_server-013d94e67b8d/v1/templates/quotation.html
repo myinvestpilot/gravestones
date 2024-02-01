@@ -1,0 +1,37 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}市场估值{% endblock %}
+
+{% block head -%}
+{{super()}}
+{% include 'style.html' %}
+{%- endblock head %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+        <table class="table table-responsive">
+            <tr class="danger">
+                <td>今日PE</td>
+                <td>历史最高PE</td>
+                <td>历史最低PE</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>65</td>
+                <td>20</td>
+            </tr>
+            <tr class="danger">
+                <td>今日PB</td>
+                <td>历史最高PB</td>
+                <td>历史最低PB</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>6</td>
+                <td>1</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+  </div>
+{% endblock %}

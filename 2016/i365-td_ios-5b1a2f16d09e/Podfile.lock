@@ -1,0 +1,54 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Charts (3.0.0):
+    - Charts/Core (= 3.0.0)
+  - Charts/Core (3.0.0)
+  - Charts/Realm (3.0.0):
+    - Charts/Core
+    - RealmSwift (~> 1.1)
+  - ObjectMapper (2.2.0)
+  - Realm (1.1.0):
+    - Realm/Headers (= 1.1.0)
+  - Realm/Headers (1.1.0)
+  - RealmSwift (1.1.0):
+    - Realm (= 1.1.0)
+  - Spring (1.0.3)
+  - SwiftyJSON (3.1.1)
+  - Toaster (2.0.1)
+  - Validator (2.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Charts
+  - Charts/Realm
+  - ObjectMapper
+  - RealmSwift
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
+  - SwiftyJSON
+  - Toaster
+  - Validator
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift3
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 3a9227c6e9157e7b47f5ac1ee5abab2a56b50002
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Charts: beb341928d2135613b4325a6c6aff9f2f6de895e
+  ObjectMapper: 4060d739febae11ab0c6af8d786f98667c82e1bd
+  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
+  RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+  Toaster: be65cd48e93a525b2a9cc4bd25a2bfc900e02d9f
+  Validator: 1e2292640c6d5de15af424ee06ebd778369c0329
+
+PODFILE CHECKSUM: 6347c1396f21790e9c35f9af129de9623539e894
+
+COCOAPODS: 1.1.1

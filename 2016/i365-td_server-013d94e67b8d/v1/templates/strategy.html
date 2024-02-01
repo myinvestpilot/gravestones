@@ -1,0 +1,20 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}交易策略{% endblock %}
+
+{% block head -%}
+{{super()}}
+{% include 'style.html' %}
+{%- endblock head %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <br>
+            <button type="button" class="btn btn-danger btn-lg btn-block ">双均线策略</button>
+            <button type="button" class="btn btn-danger btn-lg btn-block ">突破策略</button>
+            <button type="button" class="btn btn-danger btn-lg btn-block ">超跌反弹策略</button>
+        </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}资产配置{% endblock %}
+
+{% block head -%}
+{{super()}}
+{% include 'style.html' %}
+{%- endblock head %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+        <table class="table table-responsive">
+            <tr class="danger">
+                <td>大类资产</td>
+                <td>最大分配</td>
+                <td>应配比例</td>
+            </tr>
+            <tr>
+                <td class="active">债券现金</td>
+                <td>75%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="active">医药行业</td>
+                <td>35%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="active">美股欧股</td>
+                <td>15%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="active">港股</td>
+                <td>10%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="active">上证50</td>
+                <td>20%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="active">中证500</td>
+                <td>20%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="active">黄金</td>
+                <td>10%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="active">创业板</td>
+                <td>15%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="active">消费行业</td>
+                <td>15%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="active">科技信息</td>
+                <td>10%</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+  </div>
+{% endblock %}

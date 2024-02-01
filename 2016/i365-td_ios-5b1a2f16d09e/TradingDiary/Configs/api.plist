@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baseURL</key>
+	<string>https://api.improve365.cn</string>
+	<key>baseURLWithVersion</key>
+	<string>https://api.improve365.cn/v1</string>
+	<key>clientID</key>
+	<string>PcoT0NzoY2NjQKAGJ2Ets4NuXH88iX36OtdLTygD</string>
+	<key>grant_type</key>
+	<string>password</string>
+	<key>Authorization</key>
+	<string>Bearer</string>
+</dict>
+</plist>

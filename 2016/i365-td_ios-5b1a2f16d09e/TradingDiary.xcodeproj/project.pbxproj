@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		089B9B2036212A565D9D8F34 /* Pods_TradingDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A09076736FB547F398594F /* Pods_TradingDiary.framework */; };
+		6B0B8D7A1CE4C49700548DEC /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8D791CE4C49700548DEC /* CustomCollectionViewLayout.swift */; };
+		6B0B8D7F1CE4C5CB00548DEC /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8D7D1CE4C5CB00548DEC /* ContentCollectionViewCell.swift */; };
+		6B0B8D801CE4C5CB00548DEC /* ContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B0B8D7E1CE4C5CB00548DEC /* ContentCollectionViewCell.xib */; };
+		6B0B8D831CE4C61200548DEC /* PositionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8D811CE4C61200548DEC /* PositionCollectionViewCell.swift */; };
+		6B0B8D841CE4C61200548DEC /* PositionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B0B8D821CE4C61200548DEC /* PositionCollectionViewCell.xib */; };
+		6B0B8D881CE51FEF00548DEC /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8D861CE51FEF00548DEC /* DiaryTableViewCell.swift */; };
+		6B0B8D891CE51FEF00548DEC /* DiaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B0B8D871CE51FEF00548DEC /* DiaryTableViewCell.xib */; };
+		6B0B8D8B1CE53A7900548DEC /* DiaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8D8A1CE53A7900548DEC /* DiaryDetailViewController.swift */; };
+		6B0B8D8D1CE5DA9C00548DEC /* TDPortfolioManagerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8D8C1CE5DA9C00548DEC /* TDPortfolioManagerTableViewController.swift */; };
+		6B0B8D8F1CE5DAB700548DEC /* TDTradeHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8D8E1CE5DAB700548DEC /* TDTradeHistoryTableViewController.swift */; };
+		6B0B8D941CE5F28C00548DEC /* PortfolioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8D921CE5F28C00548DEC /* PortfolioTableViewCell.swift */; };
+		6B0B8D951CE5F28C00548DEC /* PortfolioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B0B8D931CE5F28C00548DEC /* PortfolioTableViewCell.xib */; };
+		6B0B8D981CE5F2BD00548DEC /* TradeHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8D961CE5F2BD00548DEC /* TradeHistoryTableViewCell.swift */; };
+		6B0B8D991CE5F2BD00548DEC /* TradeHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B0B8D971CE5F2BD00548DEC /* TradeHistoryTableViewCell.xib */; };
+		6B0B8D9B1CE64BF300548DEC /* TDCashHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8D9A1CE64BF300548DEC /* TDCashHistoryTableViewController.swift */; };
+		6B0B8D9F1CE64C6700548DEC /* CashHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8D9D1CE64C6700548DEC /* CashHistoryTableViewCell.swift */; };
+		6B0B8DA01CE64C6700548DEC /* CashHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B0B8D9E1CE64C6700548DEC /* CashHistoryTableViewCell.xib */; };
+		6B0B8DA21CE68ED000548DEC /* TDQuotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8DA11CE68ECF00548DEC /* TDQuotationViewController.swift */; };
+		6B0B8DA41CE68F1B00548DEC /* TDTradeStrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8DA31CE68F1B00548DEC /* TDTradeStrategyViewController.swift */; };
+		6B0B8DA61CE68F4700548DEC /* TDAssetAllocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B8DA51CE68F4700548DEC /* TDAssetAllocationViewController.swift */; };
+		6B13E2561CB3801E004682BF /* TDGridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13E2551CB3801E004682BF /* TDGridController.swift */; };
+		6B13E2581CB38FC1004682BF /* TDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13E2571CB38FC1004682BF /* TDCollectionViewCell.swift */; };
+		6B13E25A1CB39771004682BF /* TDPortfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13E2591CB39771004682BF /* TDPortfolio.swift */; };
+		6B13E25D1CB3C054004682BF /* TDHelpersMethond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13E25C1CB3C054004682BF /* TDHelpersMethond.swift */; };
+		6B13E2621CB3CD28004682BF /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B13E2611CB3CD28004682BF /* KeychainWrapper.m */; };
+		6B13E2641CB3E1CD004682BF /* TDResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13E2631CB3E1CD004682BF /* TDResource.swift */; };
+		6B13E2661CB6D7E4004682BF /* TDChartMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13E2651CB6D7E3004682BF /* TDChartMarker.swift */; };
+		6B13E26B1CB8BAA0004682BF /* TDBuySaleCashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13E26A1CB8BAA0004682BF /* TDBuySaleCashViewController.swift */; };
+		6B1A3C941CB132C30074D43E /* TDTradeItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1A3C931CB132C30074D43E /* TDTradeItemController.swift */; };
+		6B1A3C961CB1739E0074D43E /* TDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1A3C951CB1739E0074D43E /* TDTabBarController.swift */; };
+		6B4BDDC51CDD96DB004685BB /* TDSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BDDC41CDD96DA004685BB /* TDSaleViewController.swift */; };
+		6B4BDDC71CDDA20B004685BB /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BDDC61CDDA20B004685BB /* SweetAlert.swift */; };
+		6B4BDDC91CDE7D83004685BB /* TDCashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BDDC81CDE7D83004685BB /* TDCashViewController.swift */; };
+		6B5E1FD81CBE3C520070427E /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5E1FD71CBE3C520070427E /* StringUtils.swift */; };
+		6B6FDC571CD87C5700244E72 /* TDRiskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FDC561CD87C5700244E72 /* TDRiskManager.swift */; };
+		6B6FDC591CD87C8500244E72 /* TDPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FDC581CD87C8500244E72 /* TDPosition.swift */; };
+		6B6FDC5B1CD87CBF00244E72 /* TDTradeHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FDC5A1CD87CBF00244E72 /* TDTradeHistory.swift */; };
+		6B6FDC5D1CD87D1100244E72 /* TDCashFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FDC5C1CD87D1100244E72 /* TDCashFlow.swift */; };
+		6B6FDC5F1CD87D7700244E72 /* TDNetAssetValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FDC5E1CD87D7700244E72 /* TDNetAssetValue.swift */; };
+		6B6FDC611CD922D600244E72 /* TDPositionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FDC601CD922D600244E72 /* TDPositionHistory.swift */; };
+		6B8FA8881CC71DB4007BBA6B /* TDServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8FA8871CC71DB3007BBA6B /* TDServiceProtocol.swift */; };
+		6B944C151CCDCEA3009078DF /* TDRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B944C141CCDCEA3009078DF /* TDRouter.swift */; };
+		6B944C171CCED53C009078DF /* TDRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B944C161CCED53C009078DF /* TDRequest.swift */; };
+		6BB950B01CA5A9FC002A3274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB950AF1CA5A9FC002A3274 /* AppDelegate.swift */; };
+		6BB950B71CA5A9FC002A3274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB950B51CA5A9FC002A3274 /* Main.storyboard */; };
+		6BB950B91CA5A9FC002A3274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BB950B81CA5A9FC002A3274 /* Assets.xcassets */; };
+		6BB950BC1CA5A9FC002A3274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB950BA1CA5A9FC002A3274 /* LaunchScreen.storyboard */; };
+		6BE7DFB21CB9096B00825272 /* TDBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFB11CB9096B00825272 /* TDBuyViewController.swift */; };
+		6BE7DFB61CB92D8700825272 /* TDAddPortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFB51CB92D8700825272 /* TDAddPortfolioViewController.swift */; };
+		6BE7DFB81CB9364600825272 /* TDMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFB71CB9364600825272 /* TDMeViewController.swift */; };
+		6BE7DFBA1CB936D800825272 /* TDMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFB91CB936D800825272 /* TDMarketViewController.swift */; };
+		6BE7DFBC1CB9373000825272 /* TDDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFBB1CB9373000825272 /* TDDiaryViewController.swift */; };
+		6BE7DFBE1CB9376100825272 /* TDPositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFBD1CB9376100825272 /* TDPositionViewController.swift */; };
+		6BE7DFC01CB9669900825272 /* TDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFBF1CB9669900825272 /* TDLoginViewController.swift */; };
+		6BE7DFC21CB96DFD00825272 /* TDRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFC11CB96DFD00825272 /* TDRegisterViewController.swift */; };
+		6BE7DFC41CB96E1800825272 /* TDForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFC31CB96E1800825272 /* TDForgotPasswordViewController.swift */; };
+		6BE7DFC61CB96E3300825272 /* TDContactMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFC51CB96E3300825272 /* TDContactMeViewController.swift */; };
+		6BE7DFC81CB96E4900825272 /* TDAboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFC71CB96E4900825272 /* TDAboutMeViewController.swift */; };
+		6BE7DFCA1CB976E600825272 /* TDProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFC91CB976E600825272 /* TDProfileViewController.swift */; };
+		6BE7DFD61CBAC15600825272 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFCF1CBAC15600825272 /* TPKeyboardAvoidingCollectionView.m */; };
+		6BE7DFD71CBAC15600825272 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFD11CBAC15600825272 /* TPKeyboardAvoidingScrollView.m */; };
+		6BE7DFD81CBAC15600825272 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFD31CBAC15600825272 /* TPKeyboardAvoidingTableView.m */; };
+		6BE7DFD91CBAC15600825272 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFD51CBAC15600825272 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		6BE7DFDB1CBB70F800825272 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFDA1CBB70F700825272 /* Reachability.swift */; };
+		6BE7DFDD1CBB889600825272 /* TDLoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFDC1CBB889600825272 /* TDLoadingIndicatorView.swift */; };
+		6BE7DFE01CBC13DB00825272 /* TDPortfolioTradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7DFDF1CBC13DB00825272 /* TDPortfolioTradeViewController.swift */; };
+		6BEC66711CAE0AD20027D6B7 /* TDCoreServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC66701CAE0AD20027D6B7 /* TDCoreServices.swift */; };
+		6BEC66731CAE31670027D6B7 /* api.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BEC66721CAE31670027D6B7 /* api.plist */; };
+		6BEC66751CAE32630027D6B7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC66741CAE32630027D6B7 /* Utils.swift */; };
+		D2792031479EC764A6AB5831 /* Pods_____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5453A500525491388ED099FC /* Pods_____.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43A09076736FB547F398594F /* Pods_TradingDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradingDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5453A500525491388ED099FC /* Pods_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0B8D791CE4C49700548DEC /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCollectionViewLayout.swift; path = Views/CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
+		6B0B8D7D1CE4C5CB00548DEC /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentCollectionViewCell.swift; path = Views/ContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		6B0B8D7E1CE4C5CB00548DEC /* ContentCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContentCollectionViewCell.xib; path = Views/ContentCollectionViewCell.xib; sourceTree = "<group>"; };
+		6B0B8D811CE4C61200548DEC /* PositionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionCollectionViewCell.swift; path = Views/PositionCollectionViewCell.swift; sourceTree = "<group>"; };
+		6B0B8D821CE4C61200548DEC /* PositionCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PositionCollectionViewCell.xib; path = Views/PositionCollectionViewCell.xib; sourceTree = "<group>"; };
+		6B0B8D861CE51FEF00548DEC /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiaryTableViewCell.swift; path = Views/DiaryTableViewCell.swift; sourceTree = "<group>"; };
+		6B0B8D871CE51FEF00548DEC /* DiaryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiaryTableViewCell.xib; path = Views/DiaryTableViewCell.xib; sourceTree = "<group>"; };
+		6B0B8D8A1CE53A7900548DEC /* DiaryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiaryDetailViewController.swift; path = Controllers/DiaryDetailViewController.swift; sourceTree = "<group>"; };
+		6B0B8D8C1CE5DA9C00548DEC /* TDPortfolioManagerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDPortfolioManagerTableViewController.swift; path = Controllers/TDPortfolioManagerTableViewController.swift; sourceTree = "<group>"; };
+		6B0B8D8E1CE5DAB700548DEC /* TDTradeHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDTradeHistoryTableViewController.swift; path = Controllers/TDTradeHistoryTableViewController.swift; sourceTree = "<group>"; };
+		6B0B8D921CE5F28C00548DEC /* PortfolioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PortfolioTableViewCell.swift; path = Views/PortfolioTableViewCell.swift; sourceTree = "<group>"; };
+		6B0B8D931CE5F28C00548DEC /* PortfolioTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PortfolioTableViewCell.xib; path = Views/PortfolioTableViewCell.xib; sourceTree = "<group>"; };
+		6B0B8D961CE5F2BD00548DEC /* TradeHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TradeHistoryTableViewCell.swift; path = Views/TradeHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		6B0B8D971CE5F2BD00548DEC /* TradeHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TradeHistoryTableViewCell.xib; path = Views/TradeHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		6B0B8D9A1CE64BF300548DEC /* TDCashHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDCashHistoryTableViewController.swift; path = Controllers/TDCashHistoryTableViewController.swift; sourceTree = "<group>"; };
+		6B0B8D9D1CE64C6700548DEC /* CashHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CashHistoryTableViewCell.swift; path = Views/CashHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		6B0B8D9E1CE64C6700548DEC /* CashHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CashHistoryTableViewCell.xib; path = Views/CashHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		6B0B8DA11CE68ECF00548DEC /* TDQuotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDQuotationViewController.swift; path = Controllers/TDQuotationViewController.swift; sourceTree = "<group>"; };
+		6B0B8DA31CE68F1B00548DEC /* TDTradeStrategyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDTradeStrategyViewController.swift; path = Controllers/TDTradeStrategyViewController.swift; sourceTree = "<group>"; };
+		6B0B8DA51CE68F4700548DEC /* TDAssetAllocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDAssetAllocationViewController.swift; path = Controllers/TDAssetAllocationViewController.swift; sourceTree = "<group>"; };
+		6B13E2551CB3801E004682BF /* TDGridController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDGridController.swift; path = Controllers/TDGridController.swift; sourceTree = "<group>"; };
+		6B13E2571CB38FC1004682BF /* TDCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDCollectionViewCell.swift; path = Controllers/TDCollectionViewCell.swift; sourceTree = "<group>"; };
+		6B13E2591CB39771004682BF /* TDPortfolio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDPortfolio.swift; path = Models/Realm/TDPortfolio.swift; sourceTree = "<group>"; };
+		6B13E25C1CB3C054004682BF /* TDHelpersMethond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDHelpersMethond.swift; path = Helpers/TDHelpersMethond.swift; sourceTree = "<group>"; };
+		6B13E25F1CB3CD27004682BF /* TradingDiary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TradingDiary-Bridging-Header.h"; sourceTree = "<group>"; };
+		6B13E2601CB3CD28004682BF /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainWrapper.h; path = Vendors/KeychainWrapper/KeychainWrapper.h; sourceTree = "<group>"; };
+		6B13E2611CB3CD28004682BF /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainWrapper.m; path = Vendors/KeychainWrapper/KeychainWrapper.m; sourceTree = "<group>"; };
+		6B13E2631CB3E1CD004682BF /* TDResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDResource.swift; path = Helpers/TDResource.swift; sourceTree = "<group>"; };
+		6B13E2651CB6D7E3004682BF /* TDChartMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDChartMarker.swift; path = Views/TDChartMarker.swift; sourceTree = "<group>"; };
+		6B13E26A1CB8BAA0004682BF /* TDBuySaleCashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDBuySaleCashViewController.swift; path = Controllers/TDBuySaleCashViewController.swift; sourceTree = "<group>"; };
+		6B1A3C931CB132C30074D43E /* TDTradeItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDTradeItemController.swift; path = Controllers/TDTradeItemController.swift; sourceTree = "<group>"; };
+		6B1A3C951CB1739E0074D43E /* TDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDTabBarController.swift; path = Controllers/TDTabBarController.swift; sourceTree = "<group>"; };
+		6B2B67EC1D8BE56400ABDE89 /* TradingDiary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TradingDiary.entitlements; sourceTree = SOURCE_ROOT; };
+		6B4BDDC41CDD96DA004685BB /* TDSaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDSaleViewController.swift; path = Controllers/TDSaleViewController.swift; sourceTree = "<group>"; };
+		6B4BDDC61CDDA20B004685BB /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SweetAlert.swift; path = Utils/SweetAlert.swift; sourceTree = "<group>"; };
+		6B4BDDC81CDE7D83004685BB /* TDCashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDCashViewController.swift; path = Controllers/TDCashViewController.swift; sourceTree = "<group>"; };
+		6B5E1FD71CBE3C520070427E /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringUtils.swift; path = Utils/StringUtils.swift; sourceTree = "<group>"; };
+		6B6FDC561CD87C5700244E72 /* TDRiskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDRiskManager.swift; path = Models/Realm/TDRiskManager.swift; sourceTree = "<group>"; };
+		6B6FDC581CD87C8500244E72 /* TDPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDPosition.swift; path = Models/Realm/TDPosition.swift; sourceTree = "<group>"; };
+		6B6FDC5A1CD87CBF00244E72 /* TDTradeHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDTradeHistory.swift; path = Models/Realm/TDTradeHistory.swift; sourceTree = "<group>"; };
+		6B6FDC5C1CD87D1100244E72 /* TDCashFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDCashFlow.swift; path = Models/Realm/TDCashFlow.swift; sourceTree = "<group>"; };
+		6B6FDC5E1CD87D7700244E72 /* TDNetAssetValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDNetAssetValue.swift; path = Models/Realm/TDNetAssetValue.swift; sourceTree = "<group>"; };
+		6B6FDC601CD922D600244E72 /* TDPositionHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDPositionHistory.swift; path = Models/Realm/TDPositionHistory.swift; sourceTree = "<group>"; };
+		6B8FA8871CC71DB3007BBA6B /* TDServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDServiceProtocol.swift; path = Protocols/TDServiceProtocol.swift; sourceTree = "<group>"; };
+		6B944C141CCDCEA3009078DF /* TDRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDRouter.swift; path = Helpers/TDRouter.swift; sourceTree = "<group>"; };
+		6B944C161CCED53C009078DF /* TDRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDRequest.swift; path = Helpers/TDRequest.swift; sourceTree = "<group>"; };
+		6BB950AC1CA5A9FC002A3274 /* TradingDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB950AF1CA5A9FC002A3274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BB950B61CA5A9FC002A3274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BB950B81CA5A9FC002A3274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BB950BB1CA5A9FC002A3274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BB950BD1CA5A9FC002A3274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE7DFB11CB9096B00825272 /* TDBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDBuyViewController.swift; path = Controllers/TDBuyViewController.swift; sourceTree = "<group>"; };
+		6BE7DFB51CB92D8700825272 /* TDAddPortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDAddPortfolioViewController.swift; path = Controllers/TDAddPortfolioViewController.swift; sourceTree = "<group>"; };
+		6BE7DFB71CB9364600825272 /* TDMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDMeViewController.swift; path = Controllers/TDMeViewController.swift; sourceTree = "<group>"; };
+		6BE7DFB91CB936D800825272 /* TDMarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDMarketViewController.swift; path = Controllers/TDMarketViewController.swift; sourceTree = "<group>"; };
+		6BE7DFBB1CB9373000825272 /* TDDiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDDiaryViewController.swift; path = Controllers/TDDiaryViewController.swift; sourceTree = "<group>"; };
+		6BE7DFBD1CB9376100825272 /* TDPositionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDPositionViewController.swift; path = Controllers/TDPositionViewController.swift; sourceTree = "<group>"; };
+		6BE7DFBF1CB9669900825272 /* TDLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDLoginViewController.swift; path = Controllers/TDLoginViewController.swift; sourceTree = "<group>"; };
+		6BE7DFC11CB96DFD00825272 /* TDRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDRegisterViewController.swift; path = Controllers/TDRegisterViewController.swift; sourceTree = "<group>"; };
+		6BE7DFC31CB96E1800825272 /* TDForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDForgotPasswordViewController.swift; path = Controllers/TDForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		6BE7DFC51CB96E3300825272 /* TDContactMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDContactMeViewController.swift; path = Controllers/TDContactMeViewController.swift; sourceTree = "<group>"; };
+		6BE7DFC71CB96E4900825272 /* TDAboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDAboutMeViewController.swift; path = Controllers/TDAboutMeViewController.swift; sourceTree = "<group>"; };
+		6BE7DFC91CB976E600825272 /* TDProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDProfileViewController.swift; path = Controllers/TDProfileViewController.swift; sourceTree = "<group>"; };
+		6BE7DFCE1CBAC15600825272 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		6BE7DFCF1CBAC15600825272 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		6BE7DFD01CBAC15600825272 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = Vendors/TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		6BE7DFD11CBAC15600825272 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		6BE7DFD21CBAC15600825272 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		6BE7DFD31CBAC15600825272 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		6BE7DFD41CBAC15600825272 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		6BE7DFD51CBAC15600825272 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		6BE7DFDA1CBB70F700825272 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Utils/Reachability.swift; sourceTree = "<group>"; };
+		6BE7DFDC1CBB889600825272 /* TDLoadingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDLoadingIndicatorView.swift; path = Views/TDLoadingIndicatorView.swift; sourceTree = "<group>"; };
+		6BE7DFDF1CBC13DB00825272 /* TDPortfolioTradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDPortfolioTradeViewController.swift; path = Controllers/TDPortfolioTradeViewController.swift; sourceTree = "<group>"; };
+		6BEC66701CAE0AD20027D6B7 /* TDCoreServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDCoreServices.swift; path = Services/TDCoreServices.swift; sourceTree = "<group>"; };
+		6BEC66721CAE31670027D6B7 /* api.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = api.plist; path = Configs/api.plist; sourceTree = "<group>"; };
+		6BEC66741CAE32630027D6B7 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
+		6BEC667F1CAEEED20027D6B7 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Vendors/Realm/Realm.framework; sourceTree = "<group>"; };
+		6BEC66801CAEEED20027D6B7 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Vendors/Realm/RealmSwift.framework; sourceTree = "<group>"; };
+		96FABC4E9F9D1D8550C3F80E /* Pods-TradingDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-TradingDiary/Pods-TradingDiary.release.xcconfig"; sourceTree = "<group>"; };
+		A56E931E4F06BF39B662C37D /* Pods-TradingDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingDiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TradingDiary/Pods-TradingDiary.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BB950A91CA5A9FC002A3274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2792031479EC764A6AB5831 /* Pods_____.framework in Frameworks */,
+				089B9B2036212A565D9D8F34 /* Pods_TradingDiary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4237ACECEC8C9E2CC628CB98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5453A500525491388ED099FC /* Pods_____.framework */,
+				43A09076736FB547F398594F /* Pods_TradingDiary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B0B8D7B1CE4C51F00548DEC /* Position Content Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B0B8D7D1CE4C5CB00548DEC /* ContentCollectionViewCell.swift */,
+				6B0B8D7E1CE4C5CB00548DEC /* ContentCollectionViewCell.xib */,
+			);
+			name = "Position Content Cell";
+			sourceTree = "<group>";
+		};
+		6B0B8D7C1CE4C54A00548DEC /* Position Name Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B0B8D811CE4C61200548DEC /* PositionCollectionViewCell.swift */,
+				6B0B8D821CE4C61200548DEC /* PositionCollectionViewCell.xib */,
+			);
+			name = "Position Name Cell";
+			sourceTree = "<group>";
+		};
+		6B0B8D851CE51FBB00548DEC /* Diary Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B0B8D861CE51FEF00548DEC /* DiaryTableViewCell.swift */,
+				6B0B8D871CE51FEF00548DEC /* DiaryTableViewCell.xib */,
+			);
+			name = "Diary Table Cell";
+			sourceTree = "<group>";
+		};
+		6B0B8D901CE5F23E00548DEC /* Portfolio Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B0B8D921CE5F28C00548DEC /* PortfolioTableViewCell.swift */,
+				6B0B8D931CE5F28C00548DEC /* PortfolioTableViewCell.xib */,
+			);
+			name = "Portfolio Cell";
+			sourceTree = "<group>";
+		};
+		6B0B8D911CE5F24E00548DEC /* Trade History Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B0B8D961CE5F2BD00548DEC /* TradeHistoryTableViewCell.swift */,
+				6B0B8D971CE5F2BD00548DEC /* TradeHistoryTableViewCell.xib */,
+			);
+			name = "Trade History Cell";
+			sourceTree = "<group>";
+		};
+		6B0B8D9C1CE64C4000548DEC /* Cash History Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B0B8D9D1CE64C6700548DEC /* CashHistoryTableViewCell.swift */,
+				6B0B8D9E1CE64C6700548DEC /* CashHistoryTableViewCell.xib */,
+			);
+			name = "Cash History Cell";
+			sourceTree = "<group>";
+		};
+		6B13E25B1CB3978C004682BF /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				6B13E2591CB39771004682BF /* TDPortfolio.swift */,
+				6B6FDC561CD87C5700244E72 /* TDRiskManager.swift */,
+				6B6FDC601CD922D600244E72 /* TDPositionHistory.swift */,
+				6B6FDC581CD87C8500244E72 /* TDPosition.swift */,
+				6B6FDC5A1CD87CBF00244E72 /* TDTradeHistory.swift */,
+				6B6FDC5C1CD87D1100244E72 /* TDCashFlow.swift */,
+				6B6FDC5E1CD87D7700244E72 /* TDNetAssetValue.swift */,
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
+		6B13E25E1CB3CCD5004682BF /* KeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				6B13E2601CB3CD28004682BF /* KeychainWrapper.h */,
+				6B13E2611CB3CD28004682BF /* KeychainWrapper.m */,
+			);
+			name = KeychainWrapper;
+			sourceTree = "<group>";
+		};
+		6BB950A31CA5A9FC002A3274 = {
+			isa = PBXGroup;
+			children = (
+				6BB950AE1CA5A9FC002A3274 /* TradingDiary */,
+				6BB950AD1CA5A9FC002A3274 /* Products */,
+				D487B3CDE35271BA120A42A5 /* Pods */,
+				4237ACECEC8C9E2CC628CB98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6BB950AD1CA5A9FC002A3274 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BB950AC1CA5A9FC002A3274 /* TradingDiary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BB950AE1CA5A9FC002A3274 /* TradingDiary */ = {
+			isa = PBXGroup;
+			children = (
+				6BEC666D1CADFB530027D6B7 /* DBs */,
+				6BEC666C1CADFB070027D6B7 /* Services */,
+				6BEC66631CAD809D0027D6B7 /* Resources */,
+				6BEC66611CAD80420027D6B7 /* Protocols */,
+				6BEC66601CAD80000027D6B7 /* Configs */,
+				6BEC665F1CAD7FF20027D6B7 /* Helpers */,
+				6BEC665E1CAD7FB70027D6B7 /* Models */,
+				6BEC665D1CAD7FAB0027D6B7 /* Views */,
+				6BEC665C1CAD7F9D0027D6B7 /* Controllers */,
+				6BEC665B1CAD7F5C0027D6B7 /* Utils */,
+				6BEC665A1CAD7F4B0027D6B7 /* Vendors */,
+				6B13E25F1CB3CD27004682BF /* TradingDiary-Bridging-Header.h */,
+				6BE7DFD01CBAC15600825272 /* TPKeyboardAvoidingScrollView.h */,
+				6BB950B51CA5A9FC002A3274 /* Main.storyboard */,
+				6BB950AF1CA5A9FC002A3274 /* AppDelegate.swift */,
+				6BB950B81CA5A9FC002A3274 /* Assets.xcassets */,
+				6B2B67EC1D8BE56400ABDE89 /* TradingDiary.entitlements */,
+				6BB950BA1CA5A9FC002A3274 /* LaunchScreen.storyboard */,
+				6BB950BD1CA5A9FC002A3274 /* Info.plist */,
+			);
+			path = TradingDiary;
+			sourceTree = "<group>";
+		};
+		6BE7DFCD1CBAC15600825272 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				6BE7DFCE1CBAC15600825272 /* TPKeyboardAvoidingCollectionView.h */,
+				6BE7DFCF1CBAC15600825272 /* TPKeyboardAvoidingCollectionView.m */,
+				6BE7DFD11CBAC15600825272 /* TPKeyboardAvoidingScrollView.m */,
+				6BE7DFD21CBAC15600825272 /* TPKeyboardAvoidingTableView.h */,
+				6BE7DFD31CBAC15600825272 /* TPKeyboardAvoidingTableView.m */,
+				6BE7DFD41CBAC15600825272 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				6BE7DFD51CBAC15600825272 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = TPKeyboardAvoiding;
+			path = Vendors/TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		6BEC665A1CAD7F4B0027D6B7 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				6BE7DFCD1CBAC15600825272 /* TPKeyboardAvoiding */,
+				6B13E25E1CB3CCD5004682BF /* KeychainWrapper */,
+				6BEC667D1CAEEA5D0027D6B7 /* Realm */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		6BEC665B1CAD7F5C0027D6B7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6B5E1FD71CBE3C520070427E /* StringUtils.swift */,
+				6BE7DFDA1CBB70F700825272 /* Reachability.swift */,
+				6BEC66741CAE32630027D6B7 /* Utils.swift */,
+				6B4BDDC61CDDA20B004685BB /* SweetAlert.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		6BEC665C1CAD7F9D0027D6B7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BE7DFBF1CB9669900825272 /* TDLoginViewController.swift */,
+				6BE7DFC11CB96DFD00825272 /* TDRegisterViewController.swift */,
+				6BE7DFC31CB96E1800825272 /* TDForgotPasswordViewController.swift */,
+				6BE7DFC51CB96E3300825272 /* TDContactMeViewController.swift */,
+				6BE7DFC71CB96E4900825272 /* TDAboutMeViewController.swift */,
+				6BE7DFB11CB9096B00825272 /* TDBuyViewController.swift */,
+				6B13E2551CB3801E004682BF /* TDGridController.swift */,
+				6B1A3C931CB132C30074D43E /* TDTradeItemController.swift */,
+				6BE7DFB71CB9364600825272 /* TDMeViewController.swift */,
+				6BE7DFB51CB92D8700825272 /* TDAddPortfolioViewController.swift */,
+				6BE7DFB91CB936D800825272 /* TDMarketViewController.swift */,
+				6B13E26A1CB8BAA0004682BF /* TDBuySaleCashViewController.swift */,
+				6BE7DFBB1CB9373000825272 /* TDDiaryViewController.swift */,
+				6BE7DFBD1CB9376100825272 /* TDPositionViewController.swift */,
+				6B1A3C951CB1739E0074D43E /* TDTabBarController.swift */,
+				6BE7DFC91CB976E600825272 /* TDProfileViewController.swift */,
+				6BE7DFDF1CBC13DB00825272 /* TDPortfolioTradeViewController.swift */,
+				6B4BDDC41CDD96DA004685BB /* TDSaleViewController.swift */,
+				6B4BDDC81CDE7D83004685BB /* TDCashViewController.swift */,
+				6B0B8D8A1CE53A7900548DEC /* DiaryDetailViewController.swift */,
+				6B0B8D8C1CE5DA9C00548DEC /* TDPortfolioManagerTableViewController.swift */,
+				6B0B8D8E1CE5DAB700548DEC /* TDTradeHistoryTableViewController.swift */,
+				6B0B8D9A1CE64BF300548DEC /* TDCashHistoryTableViewController.swift */,
+				6B0B8DA11CE68ECF00548DEC /* TDQuotationViewController.swift */,
+				6B0B8DA31CE68F1B00548DEC /* TDTradeStrategyViewController.swift */,
+				6B0B8DA51CE68F4700548DEC /* TDAssetAllocationViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6BEC665D1CAD7FAB0027D6B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B0B8D9C1CE64C4000548DEC /* Cash History Cell */,
+				6B0B8D911CE5F24E00548DEC /* Trade History Cell */,
+				6B0B8D901CE5F23E00548DEC /* Portfolio Cell */,
+				6B0B8D851CE51FBB00548DEC /* Diary Table Cell */,
+				6B0B8D7C1CE4C54A00548DEC /* Position Name Cell */,
+				6B0B8D7B1CE4C51F00548DEC /* Position Content Cell */,
+				6B13E2651CB6D7E3004682BF /* TDChartMarker.swift */,
+				6BE7DFDC1CBB889600825272 /* TDLoadingIndicatorView.swift */,
+				6B13E2571CB38FC1004682BF /* TDCollectionViewCell.swift */,
+				6B0B8D791CE4C49700548DEC /* CustomCollectionViewLayout.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6BEC665E1CAD7FB70027D6B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B13E25B1CB3978C004682BF /* Realm */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6BEC665F1CAD7FF20027D6B7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6B13E25C1CB3C054004682BF /* TDHelpersMethond.swift */,
+				6B13E2631CB3E1CD004682BF /* TDResource.swift */,
+				6B944C141CCDCEA3009078DF /* TDRouter.swift */,
+				6B944C161CCED53C009078DF /* TDRequest.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		6BEC66601CAD80000027D6B7 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				6BEC66721CAE31670027D6B7 /* api.plist */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		6BEC66611CAD80420027D6B7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6B8FA8871CC71DB3007BBA6B /* TDServiceProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		6BEC66621CAD80510027D6B7 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
+		6BEC66631CAD809D0027D6B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6BEC666C1CADFB070027D6B7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6BEC66701CAE0AD20027D6B7 /* TDCoreServices.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		6BEC666D1CADFB530027D6B7 /* DBs */ = {
+			isa = PBXGroup;
+			children = (
+				6BEC66621CAD80510027D6B7 /* Realm */,
+			);
+			name = DBs;
+			sourceTree = "<group>";
+		};
+		6BEC667D1CAEEA5D0027D6B7 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				6BEC667F1CAEEED20027D6B7 /* Realm.framework */,
+				6BEC66801CAEEED20027D6B7 /* RealmSwift.framework */,
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
+		D487B3CDE35271BA120A42A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A56E931E4F06BF39B662C37D /* Pods-TradingDiary.debug.xcconfig */,
+				96FABC4E9F9D1D8550C3F80E /* Pods-TradingDiary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BB950AB1CA5A9FC002A3274 /* TradingDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BB950C01CA5A9FC002A3274 /* Build configuration list for PBXNativeTarget "TradingDiary" */;
+			buildPhases = (
+				5CDAEDA0BAAD73D6CBBFC637 /* [CP] Check Pods Manifest.lock */,
+				6BB950A81CA5A9FC002A3274 /* Sources */,
+				6BB950A91CA5A9FC002A3274 /* Frameworks */,
+				6BB950AA1CA5A9FC002A3274 /* Resources */,
+				4A6F4280FE136273719E2690 /* [CP] Embed Pods Frameworks */,
+				EC9539B9F031067F2C821906 /* [CP] Copy Pods Resources */,
+				6BEC667E1CAEECCC0027D6B7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradingDiary;
+			productName = TradingDiary;
+			productReference = 6BB950AC1CA5A9FC002A3274 /* TradingDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BB950A41CA5A9FC002A3274 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = i365.tech;
+				TargetAttributes = {
+					6BB950AB1CA5A9FC002A3274 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 94T9RLDNJR;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 6BB950A71CA5A9FC002A3274 /* Build configuration list for PBXProject "TradingDiary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BB950A31CA5A9FC002A3274;
+			productRefGroup = 6BB950AD1CA5A9FC002A3274 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BB950AB1CA5A9FC002A3274 /* TradingDiary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BB950AA1CA5A9FC002A3274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEC66731CAE31670027D6B7 /* api.plist in Resources */,
+				6B0B8DA01CE64C6700548DEC /* CashHistoryTableViewCell.xib in Resources */,
+				6B0B8D841CE4C61200548DEC /* PositionCollectionViewCell.xib in Resources */,
+				6B0B8D991CE5F2BD00548DEC /* TradeHistoryTableViewCell.xib in Resources */,
+				6BB950BC1CA5A9FC002A3274 /* LaunchScreen.storyboard in Resources */,
+				6BB950B91CA5A9FC002A3274 /* Assets.xcassets in Resources */,
+				6B0B8D951CE5F28C00548DEC /* PortfolioTableViewCell.xib in Resources */,
+				6B0B8D891CE51FEF00548DEC /* DiaryTableViewCell.xib in Resources */,
+				6B0B8D801CE4C5CB00548DEC /* ContentCollectionViewCell.xib in Resources */,
+				6BB950B71CA5A9FC002A3274 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A6F4280FE136273719E2690 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TradingDiary/Pods-TradingDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CDAEDA0BAAD73D6CBBFC637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6BEC667E1CAEECCC0027D6B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		EC9539B9F031067F2C821906 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TradingDiary/Pods-TradingDiary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BB950A81CA5A9FC002A3274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B0B8D881CE51FEF00548DEC /* DiaryTableViewCell.swift in Sources */,
+				6B0B8D941CE5F28C00548DEC /* PortfolioTableViewCell.swift in Sources */,
+				6BE7DFBC1CB9373000825272 /* TDDiaryViewController.swift in Sources */,
+				6BEC66751CAE32630027D6B7 /* Utils.swift in Sources */,
+				6B13E2561CB3801E004682BF /* TDGridController.swift in Sources */,
+				6BE7DFB61CB92D8700825272 /* TDAddPortfolioViewController.swift in Sources */,
+				6BE7DFE01CBC13DB00825272 /* TDPortfolioTradeViewController.swift in Sources */,
+				6BE7DFC81CB96E4900825272 /* TDAboutMeViewController.swift in Sources */,
+				6B0B8DA41CE68F1B00548DEC /* TDTradeStrategyViewController.swift in Sources */,
+				6BE7DFD91CBAC15600825272 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				6B13E25A1CB39771004682BF /* TDPortfolio.swift in Sources */,
+				6BE7DFCA1CB976E600825272 /* TDProfileViewController.swift in Sources */,
+				6B0B8D981CE5F2BD00548DEC /* TradeHistoryTableViewCell.swift in Sources */,
+				6B4BDDC51CDD96DB004685BB /* TDSaleViewController.swift in Sources */,
+				6B0B8D8F1CE5DAB700548DEC /* TDTradeHistoryTableViewController.swift in Sources */,
+				6BE7DFDB1CBB70F800825272 /* Reachability.swift in Sources */,
+				6B0B8DA61CE68F4700548DEC /* TDAssetAllocationViewController.swift in Sources */,
+				6B13E25D1CB3C054004682BF /* TDHelpersMethond.swift in Sources */,
+				6B13E2641CB3E1CD004682BF /* TDResource.swift in Sources */,
+				6BE7DFDD1CBB889600825272 /* TDLoadingIndicatorView.swift in Sources */,
+				6B0B8D7A1CE4C49700548DEC /* CustomCollectionViewLayout.swift in Sources */,
+				6BE7DFD81CBAC15600825272 /* TPKeyboardAvoidingTableView.m in Sources */,
+				6BB950B01CA5A9FC002A3274 /* AppDelegate.swift in Sources */,
+				6B13E2661CB6D7E4004682BF /* TDChartMarker.swift in Sources */,
+				6B13E26B1CB8BAA0004682BF /* TDBuySaleCashViewController.swift in Sources */,
+				6BE7DFC21CB96DFD00825272 /* TDRegisterViewController.swift in Sources */,
+				6B6FDC5D1CD87D1100244E72 /* TDCashFlow.swift in Sources */,
+				6B6FDC611CD922D600244E72 /* TDPositionHistory.swift in Sources */,
+				6BE7DFC01CB9669900825272 /* TDLoginViewController.swift in Sources */,
+				6B6FDC571CD87C5700244E72 /* TDRiskManager.swift in Sources */,
+				6B1A3C941CB132C30074D43E /* TDTradeItemController.swift in Sources */,
+				6BE7DFD71CBAC15600825272 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				6BEC66711CAE0AD20027D6B7 /* TDCoreServices.swift in Sources */,
+				6B6FDC5B1CD87CBF00244E72 /* TDTradeHistory.swift in Sources */,
+				6B1A3C961CB1739E0074D43E /* TDTabBarController.swift in Sources */,
+				6BE7DFB81CB9364600825272 /* TDMeViewController.swift in Sources */,
+				6B0B8D831CE4C61200548DEC /* PositionCollectionViewCell.swift in Sources */,
+				6B0B8D7F1CE4C5CB00548DEC /* ContentCollectionViewCell.swift in Sources */,
+				6BE7DFC41CB96E1800825272 /* TDForgotPasswordViewController.swift in Sources */,
+				6B944C151CCDCEA3009078DF /* TDRouter.swift in Sources */,
+				6BE7DFBA1CB936D800825272 /* TDMarketViewController.swift in Sources */,
+				6B0B8D8D1CE5DA9C00548DEC /* TDPortfolioManagerTableViewController.swift in Sources */,
+				6B944C171CCED53C009078DF /* TDRequest.swift in Sources */,
+				6B6FDC5F1CD87D7700244E72 /* TDNetAssetValue.swift in Sources */,
+				6BE7DFC61CB96E3300825272 /* TDContactMeViewController.swift in Sources */,
+				6B4BDDC71CDDA20B004685BB /* SweetAlert.swift in Sources */,
+				6B4BDDC91CDE7D83004685BB /* TDCashViewController.swift in Sources */,
+				6B0B8D8B1CE53A7900548DEC /* DiaryDetailViewController.swift in Sources */,
+				6B6FDC591CD87C8500244E72 /* TDPosition.swift in Sources */,
+				6B13E2581CB38FC1004682BF /* TDCollectionViewCell.swift in Sources */,
+				6BE7DFBE1CB9376100825272 /* TDPositionViewController.swift in Sources */,
+				6B13E2621CB3CD28004682BF /* KeychainWrapper.m in Sources */,
+				6B5E1FD81CBE3C520070427E /* StringUtils.swift in Sources */,
+				6BE7DFD61CBAC15600825272 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				6BE7DFB21CB9096B00825272 /* TDBuyViewController.swift in Sources */,
+				6B0B8D9F1CE64C6700548DEC /* CashHistoryTableViewCell.swift in Sources */,
+				6B0B8DA21CE68ED000548DEC /* TDQuotationViewController.swift in Sources */,
+				6B0B8D9B1CE64BF300548DEC /* TDCashHistoryTableViewController.swift in Sources */,
+				6B8FA8881CC71DB4007BBA6B /* TDServiceProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6BB950B51CA5A9FC002A3274 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BB950B61CA5A9FC002A3274 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BB950BA1CA5A9FC002A3274 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BB950BB1CA5A9FC002A3274 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BB950BE1CA5A9FC002A3274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BB950BF1CA5A9FC002A3274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BB950C11CA5A9FC002A3274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A56E931E4F06BF39B662C37D /* Pods-TradingDiary.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TradingDiary.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 94T9RLDNJR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TradingDiary/Vendors/Realm",
+				);
+				INFOPLIST_FILE = TradingDiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.i365.TradingDiary;
+				PRODUCT_NAME = TradingDiary;
+				SWIFT_OBJC_BRIDGING_HEADER = "TradingDiary/TradingDiary-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6BB950C21CA5A9FC002A3274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96FABC4E9F9D1D8550C3F80E /* Pods-TradingDiary.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TradingDiary.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 94T9RLDNJR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TradingDiary/Vendors/Realm",
+				);
+				INFOPLIST_FILE = TradingDiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.i365.TradingDiary;
+				PRODUCT_NAME = TradingDiary;
+				SWIFT_OBJC_BRIDGING_HEADER = "TradingDiary/TradingDiary-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BB950A71CA5A9FC002A3274 /* Build configuration list for PBXProject "TradingDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BB950BE1CA5A9FC002A3274 /* Debug */,
+				6BB950BF1CA5A9FC002A3274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BB950C01CA5A9FC002A3274 /* Build configuration list for PBXNativeTarget "TradingDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BB950C11CA5A9FC002A3274 /* Debug */,
+				6BB950C21CA5A9FC002A3274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BB950A41CA5A9FC002A3274 /* Project object */;
+}
